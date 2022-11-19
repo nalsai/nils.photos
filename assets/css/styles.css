@@ -1,0 +1,54 @@
+@font-face {
+	  font-family: "Sawarabi Mincho";
+	  font-style: normal;
+	  font-weight: 400;
+	  src: local("Sawarabi Mincho"), local("SawarabiMincho-Regular"), url("/fonts/sawarabi-mincho.woff2") format("woff2");
+	  font-display: swap;
+}
+
+@font-face {
+	  font-family: "Alice";
+	  font-style: normal;
+	  font-weight: 400;
+	  src: local("Alice Regular"), local("Alice-Regular"), url("/fonts/alice-regular.woff2") format("woff2");
+	  font-display: swap;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #101010;
+  font-family: "Alice", "Sawarabi Mincho", serif;
+  font-size: 14px;
+}
+
+.logo-text {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+  font-family: Alice, serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000000;
+  cursor: default;
+}
+
+.logo-text-link {
+  color: rgba(255,255,255,.6);
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.logo-text-small {
+  font-size: 1rem;
+}
+
+a:hover {
+  color: #fff;
+}
+

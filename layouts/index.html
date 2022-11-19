@@ -1,0 +1,25 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{{ .Title }}</title>
+  <link rel="icon" type="image/png" href="img/Avatar400.png" sizes="400x400">
+  {{ partial "gallerydeluxe/head.html" . }}
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <span class="logo-text" href="{{ site.Home.RelPermalink }}">
+    nils.photos <a class="logo-text-link logo-text-small" href="https://nalsai.de">(nalsai.de)</a>
+  </span>
+  {{ $gallery := partial "gallerydeluxe/init.html" (dict "sourcePath" "images") }}
+  {{ $params := site.Params.gallerydeluxe }}
+  <div id="gallerydeluxe" data-gd-image-data-url="{{ $gallery.imageDataUrl }}">
+    <div id="gd-modal" class="gd-modal">
+      <span id="gd-modal-close" class="gd-modal-close">&times;</span>
+      {{ if $params.enable_exif }}
+        <div id="gd-modal-exif" class="gd-modal-exif"></div>
+      {{ end }}
+    </div>
+  </div>
+</body>
+</html>
