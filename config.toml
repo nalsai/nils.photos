@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'nils.photos'
 disableKinds = ["section", "taxonomy", "term"]
 
+timeout = "10m"
+
 [params]
     [params.gallerydeluxe]
         # Shuffle the images in the gallery to give the impression of a new gallery each time.
