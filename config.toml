@@ -3,9 +3,12 @@ languageCode = 'en-us'
 title = 'nils.photos'
 disableKinds = ["section", "taxonomy", "term"]
 
-timeout = "10m"
+timeout = "5m"
 
 [params]
+    [params.umami]
+        id = "2d8dc53e-fdfd-401e-b5f6-4e1e8eeaaa5b"
+        src = "https://umami.nils.moe/script.js"
     [params.gallerydeluxe]
         # Shuffle the images in the gallery to give the impression of a new gallery each time.
         shuffle = false
@@ -25,7 +28,7 @@ timeout = "10m"
 [imaging]
     anchor         = "Smart"
     resampleFilter = "CatmullRom"
-    quality        = 80
+    quality        = 75
     [imaging.exif]
         disableDate    = false
         disableLatLong = true
